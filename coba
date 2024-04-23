@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Pembayaran Top-Up Game</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .payment-container {
+      max-width: 800px;
+      margin: 50px auto;
+    }
+    .payment-method {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .payment-method:hover {
+      transform: translateY(-3px);
+      transition: transform 0.3s ease;
+    }
+    .payment-method img {
+      max-width: 100%;
+      height: auto;
+    }
+    .payment-method h3 {
+      margin-top: 10px;
+    }
+    .price-options {
+      list-style: none;
+      padding: 0;
+    }
+    .price-option {
+      margin-bottom: 10px;
+    }
+    .price-option label {
+      display: block;
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .price-option input[type="radio"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container payment-container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="payment-method">
+        <img src="bank_transfer.png" alt="Bank Transfer">
+        <h3>Dana</h3>
+        <ul class="price-options">
+          <li class="price-option">
+            <input type="radio" id="price1" name="price" value="100">
+            <label for="price1">100 Coins - $5</label>
+          </li>
+          <!-- Add more price options as needed -->
+        </ul>
+        <button class="btn btn-primary">Pilih Metode Ini</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="payment-method">
+        <img src="credit_card.png" alt="Credit Card">
+        <h3>Kartu Kredit</h3>
+        <ul class="price-options">
+          <li class="price-option">
+            <input type="radio" id="price3" name="price" value="50">
+            <label for="price3">50 Coins - $3</label>
+          </li>
+          <li class="price-option">
+            <input type="radio" id="price4" name="price" value="100">
+            <label for="price4">100 Coins - $5</label>
+          </li>
+          <!-- Add more price options as needed -->
+        </ul>
+        <button class="btn btn-primary">Pilih Metode Ini</button>
+      </div>
+    </div>
+    <!-- Add more payment methods as needed -->
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

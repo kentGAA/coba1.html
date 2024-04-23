@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemilihan Tempat Duduk Bioskop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: rgb(231, 126, 126);
+      margin-left: 440px;
+      
+    }
+
+    .seat {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      display: inline-block;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+    .seats-container {
+      border-radius: 5px;
+      color: white;
+    }
+    .selected {
+      background-color: rgb(109, 109, 109);
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .selected:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px black;
+      background-color: black;
+
+    }
+
+    .selectedactive {
+      transform: scale(1.1);
+    }
+
+    .container-text {
+      margin-left: 125px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2 class="container-text">Pilih Tempat Duduk Anda</h2>
+    <div id="seats-container">
+      <div class="seat">A1</div>
+      <div class="seat">A2</div>
+      <div class="seat">A3</div>
+      <div class="seat">A4</div>
+      <div class="seat">A5</div>
+      <div class="seat">A6</div>
+      <div class="seat">A7</div>
+      <div class="seat">A8</div>
+      <div class="seat">A9</div>
+      <div class="seat">A10</div>
+    
+    <div id="seats-container">
+      <div class="seat">B1</div>
+      <div class="seat">B2</div>
+      <div class="seat">B3</div>
+      <div class="seat">B4</div>
+      <div class="seat">B5</div>
+      <div class="seat">B6</div>
+      <div class="seat">B7</div>
+      <div class="seat">B8</div>
+      <div class="seat">B9</div>
+      <div class="seat">B10</div>
+
+      <div id="seats-container">
+        <div class="seat">C1</div>
+        <div class="seat">C2</div>
+        <div class="seat">C3</div>
+        <div class="seat">C4</div>
+        <div class="seat">C5</div>
+        <div class="seat">C6</div>
+        <div class="seat">C7</div>
+        <div class="seat">C8</div>
+        <div class="seat">C9</div>
+        <div class="seat">C10</div>
+    </div>
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.seat').click(function () {
+        $(this).toggleClass('selected');
+      });
+    });
+  </script>
+</body>
+
+</html>
